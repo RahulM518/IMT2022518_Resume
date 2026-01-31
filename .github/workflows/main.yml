@@ -1,0 +1,57 @@
+name: Build and publish LaTeX document
+
+on: [push]
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Necessary to delete and push tags
+
+      - name: Set Git identity
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: Resume.tex
+          latexmk_shell_escape: true
+
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Resume
+          path: ./Resume.pdf
+
+      - name: Delete and recreate `latest` tag
+        run: |
+          git tag -d latest || true
+          git push --delete origin latest || true
+          git tag latest
+          git push origin latest
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          name: Latest Resume
+          draft: false
+          prerelease: false
+          overwrite: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload PDF to Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./Resume.pdf
+          tag_name: latest
+          overwrite: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

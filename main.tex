@@ -1,0 +1,340 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+% \documentclass{article}
+\usepackage{fontawesome5} % For icons
+\usepackage{hyperref}     % For clickable links
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=blue,
+%     urlcolor=blue
+% }
+\usepackage[utf8]{inputenc}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Rahul Mukundhan} \\ \vspace{1pt}
+    International Institute of Information Technology, Bangalore \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 9008490486 ~
+    %on campus - iiitb
+    %off campus - gmail
+    \href{mailto:rahul.mukundhan@iiitb.ac.in}{\raisebox{-0.2\height}\faEnvelope\  \underline{rahul.mukundhan@iiitb.ac.in}} ~
+    \href{https://linkedin.com/in/rahul-m-83aa9a255/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/rahul-m} }  ~
+    \href{https://github.com/RahulM518}
+    {\raisebox{-0.2\height}\faGithub\ \underline{github.com/RahulM518}}
+    \vspace{-10pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {International Institute of Information Technology Bangalore}{Sep. 2022 -- July 2027}
+      {Integrated MTech program (BTech + MTech) in ECE}{3.03/4}
+  \resumeSubHeadingListEnd
+  \vspace{-18pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Summer Research Intern}{June 2025 - July 2025}
+  {Researcher- International Institute of Information Technology Bangalore}{Bengaluru, Karnataka}
+  \resumeItemListStart
+  \resumeItem{Developed Python scripts to automate extraction and analysis of circuit simulation data from Cadence Virtuoso.}
+  \resumeItem{Generated techplot visualizations for design parameter validation across multiple process nodes (45nm, 90nm, 180nm).}
+  \resumeItem{Implemented automated testing framework achieving $<$5\%  gain and pole frequency errors for 5T-OTA designs.}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-16pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Embedded Systems Trainee}{September 2024 - December 2024}
+      {Apprenticeship - Infineon Technologies}{Bengaluru, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Developed firmware for PSoC 4100S Plus using Embedded C, focusing on ADC, PWM, and interrupt handling.}
+        \resumeItem{Hands-on experience with embedded development workflows, systematic testing and debugging.}
+        %including build systems (Makefiles).
+        % \resumeItem{Validated firmware modules through systematic testing and debugging.}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-20pt}
+
+% %-----------MENTORSHIP/TEACHING ASSISTANCE-----------
+\section{Mentorship}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Analog Circuits}{Jan 2026}{}{}
+      \vspace{-18.5pt}
+      \resumeItemListStart
+        \resumeItem{Interactive teaching sessions on theoretical and design fundamentals of analog circuit design.}   
+      \resumeItemListEnd   
+  \resumeSubHeadingListEnd
+\vspace{-21.5pt}
+
+% %-----------MPublication-----------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Triple-Packed Posit MAC for Low-Bitwidth CNN Inference}{Nov 2025}{}{}
+      \vspace{-18.5pt}
+      \resumeItemListStart
+        \resumeItem{Accepted in the IEEE International Symposium on Circuits and Systems (ISCAS), 2026.}   
+      \resumeItemListEnd   
+  \resumeSubHeadingListEnd
+\vspace{-21.5pt}
+
+\section{Honours and Awards}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Finalist in IEEE-VLSID 2025} }{Jan 2025}
+          \resumeItemListStart
+            \resumeItem{{Delivered live hardware demonstrations at VLSI Design Conference 2025 and Texas Instruments Bangalore.}}
+          \resumeItemListEnd 
+          %\vspace{-19.5pt}      
+       % \resumeProjectHeading
+       %    {\textbf{Runner of ELCIA tech-summit 2024} }{Aug 2024}
+       %    \resumeItemListStart
+       %       \resumeItem{Shortlisted among top solutions across Karnataka for the design of an secure IoT-blockchain integration system.}
+       %    \resumeItemListEnd 
+          \vspace{-11.5pt}
+      % \resumeProjectHeading
+      %     {\textbf{Winner in Chiguru-23} }{November 2023}
+      %     \resumeItemListStart
+      %       \resumeItem{Part of the crew "Spotless Mnds" as the scriptwriter, for the movie "Thread of Life", which won 1st among 20+ teams in CIT's cultural fest Chiguru }       
+           \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-10.5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+           {\textbf{Triple-Packed Posit MAC for CNN Acceleration} 
+           $|$ \emph{Verilog,Python,DSP48E2}}{Jun 2025 -- Aug 2025}
+          \resumeItemListStart
+            \resumeItem{Designed a Triple-Packed Posit MAC accelerator that over-packs DSP48E2 blocks to compute three exact 4-bit posit multiplications per cycle, tripling convolution throughput while reducing LUT usage by 15-25\%.}
+             \resumeItem{Deployed on LeNet-5 based inference of the MNIST dataset, achieving 90.5\% Top-1 accuracy (0.3\% drop from FP32) with Posit(8,1), demonstrating RMSE within 0.02 of FP16 for MAC operations.}
+          \resumeItemListEnd 
+      \vspace{-19.5pt}
+    %\resumeProjectHeading
+    %        {\textbf{LDO Regulator Design and Validation Framework} 
+    %        $|$ \emph{LTSpice, Cadence Virtuoso}}{Oct 2025 -- Present}
+    %       \resumeItemListStart
+    %         \resumeItem{Performed Monte Carlo statistical analysis on 1000+ simulation runs to verify PSRR, phase margin, and pole frequency specifications, with initial sizing debugging in LTSpice for two types of LDO in 180nm technode.}
+    %          % \resumeItem{Analyzed behavior of a NMOS-Diode connected transitor to an PMOS input,verified the behavior of the square law within a 8\% error gap and a $100\,\mu\text{A}$ limit in a 180nm tech node.}
+    %          % \resumeItem{Debugged testing in LTSpice, then fine-tuned the parameters in Cadence Virtuoso using the gm/Id design methodology.}
+    %          \resumeItem{Designed and validated PSRR(-60 dB) and Phase Margin(65 degrees) against design targets within an 8\% error margin.}
+    %         % \resumeItem{Achieved a PSRR of -60dB, a phase margin of greater than 60 degrees, and reported atmost 8{\%}-10{\%} for the poles, with a majority of samples have an output of 1V, as per Monte-Carlo simulations.}
+    %       \resumeItemListEnd 
+      % \vspace{-19pt}
+    \resumeProjectHeading
+           {\textbf{Warehouse Management System} 
+           $|$ \emph{TI-SKAM62A-LP, Robotics, ML}}{Oct 2024 -- Jan 2025}
+          \resumeItemListStart
+             \resumeItem{Deployed YOLOv8 object detection model and a controller for autonomous robot control system using embedded Linux (Arago) on ARM Cortex-A53 processor and C7X DSP-based acceleration.}
+            \resumeItem{Integrated RFID way-point detection with custom communication protocols for multi-robot coordination and achieved 30+ FPS inference for real-time navigation and obstacle avoidance.}
+          \resumeItemListEnd 
+      \vspace{-18.5pt}
+      \resumeProjectHeading
+          {\textbf{MIPS Assembler and Processor} $|$ \emph{Java, Python, MARS}}{Oct 2023 - Nov 2023}
+          \resumeItemListStart
+            \resumeItem{Developed MIPS assembler and simulator with instruction parsing and label resolution.}
+            \resumeItem{Implemented non and 5-stage pipelined CPU models with control flow, instruction decode, and exception handling.}
+          \resumeItemListEnd      
+    \vspace{-18.5pt}
+       \resumeProjectHeading
+           {\textbf{POSIT multiplier for FPGAs} $|$ \emph{Basys3, Xilinx Vivado, Verilog}}{Oct 2024 -- Nov 2024}
+          \resumeItemListStart
+          \resumeItem{Designed and implemented a 32-bit POSIT arithmetic multiplication system on the Basys-3 board. This was bench marked against IEEE-754 FPUs and analyzed trade-offs in area and speed.}
+          \resumeItem{Reported an resource utilization of only 2326 LUTs, 112 LUTRAMs, and 2326 Flip Flops, optimizing memory and logic usage for an efficient FPGA implementation.}
+          % \resumeItem{Enabled comparative analysis of numeric formats for hardware-efficient computation.}
+          \resumeItemListEnd
+    %       \vspace{-19pt}
+    %   \resumeProjectHeading
+    %       {\textbf{BLITZ} $|$ \emph{Raspberry Pi, Python, Circuit Design}}{Jul 2024 -- Aug 2024}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed a blockchain-hardware bridge framework enabling secure IoT data collection for decentralized apps.}
+    %         \resumeItem{Designed a web dashboard and Python backend to interact with smart contracts via GPIO-triggered events.}
+    %         % \resumeItem{A client friendly interface is created for non-developers to use the services of BLIT.Web3 libraries both in Python and Javascript have been utilised for interacting with the Smart Contracts.}
+    %       \resumeItemListEnd 
+          \resumeSubHeadingListEnd
+          \vspace{-22.5pt}
+           
+
+
+
+%-----------PUBLICATIONS-------
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills and Competencies}
+%initial name, use for 6/11 month - technincal skills
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     %\textbf{Aspiration}{:Embedded firmware and edge AI deployment} %Precision analog \& mixed-signal design\\
+     \textbf{Languages}{: Python, C/C++, Java, Verilog } \\
+     \textbf{Development tools}{: Linux, Bash, PowerShell, Git/GitHub, Xilinx Vivado, Vitis, Cadence Virtuoso}\\ % and Genus 
+      \textbf{Hardware Platforms}{: TI-SKAM62A-LP, Raspberry Pi, Arduino Nano, Uno, ESP32, Basys3} \\
+      %\textbf{AI/ML Frameworks}{:PyTorch, TensorFlow.OpenCV}\\
+    }}
+ \end{itemize}
+ \vspace{-25pt}
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+\vspace{-1pt}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=5pt]
+                \item\small Digital CMOS Design
+                \item \small FPGA design
+                \item Computer Architecture
+                \item Analog CMOS Design
+                \item Digital Design
+                \item VLSI Architecture
+                \item Machine Learning
+                \item Embedded Systems
+            \end{itemize}
+        \end{multicols}
+        \vspace*{3\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+% %-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%       \resumeSubheading{Core Panel - Turiya Club}{Oct 2024 -- Present}{}{ }
+%         \vspace{-20pt}
+%             \resumeItemListStart
+%                 \resumeItem{Led budgeting and logistics for VAL-202 tech events, managing speakers, travel, and promotion strategy.}
+%             \resumeItemListEnd
+%         \resumeSubheading{Media Committee - Synergy }{ June 2024 -- June 2025}{}{}
+%         \vspace{-20pt}
+%             \resumeItemListStart
+%                 \resumeItem{Directed social media campaigns; coordinated outreach with 20+ volunteers across 10+ colleges..}
+%             \resumeItemListEnd      
+%     \resumeSubHeadingListEnd
+
+\end{document}

@@ -49,7 +49,7 @@ jobs:
       - name: Upload PDF to Release
         uses: softprops/action-gh-release@v1
         with:
-          files: ./Resume.pdf
+          files: ./main.pdf
           tag_name: latest
           overwrite: true
         env:
